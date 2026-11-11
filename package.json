@@ -1,0 +1,17 @@
+{
+  "name": "masala-kingdom",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portable four-page MASALA KINGDOM website with local assets and vendored BudouX tooling",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "dev": "node tools/serve.mjs",
+    "build": "node tools/build.mjs",
+    "verify": "node tools/verify.mjs && node tools/budoux.mjs --check && node tools/integrity.mjs --check",
+    "test": "node --test tools/budoux.test.mjs",
+    "budoux": "node tools/budoux.mjs",
+    "integrity": "node tools/integrity.mjs"
+  }
+}

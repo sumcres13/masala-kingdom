@@ -1,0 +1,27 @@
+Verified during the 2026-11-11 client review update:
+- Node verification command: node tools/verify.mjs (see fresh command result).
+- Desktop navigation center aligns exactly with the usable viewport center (measured delta: 0px at 1590px browser width).
+- Home: namaste team image, compact section padding, new chili/paisley artwork, orange reservation button with white text, LINE green #06c755, lighter green gradient footer.
+- About: no representative photo or greeting-label element; Japanese and English name/title switch correctly; shop and opening-hour rows included.
+- Store: pale beige details panel #fff9ee; custom jaali artwork loaded; fourth gallery button selected slideshow 3.png.
+- All six booking/delivery cards: real mouse hover matched, computed shine animation masalaShine.
+- Reduced-motion mode: card shine animation computed as none; emulation then cleared.
+- Mobile 390px: store gallery and about page inspected without horizontal overflow; mobile navigation opened and navigated correctly; English name/title and new language control checked.
+- Desktop home/about inspected without horizontal overflow. Home image check found zero broken images.
+- Custom image generation: exactly two built-in calls, per the user's explicitly approved model-verification exception.
+- External reservation/delivery destinations retained. No booking or order was submitted.
+- Preview viewport override reset; final website preview left open.
+Final polish verification, 2026-11-11:
+- Verified the Google Maps listing's address control: 〒212-0015 神奈川県川崎市幸区柳町７−８. Source CID 1471651929162841500.
+- Address appears throughout the public pages and JP/EN dictionaries; obsolete pending-address copy removed.
+- Home hero uses the newly supplied image. Both hero labels center; arrow-element count 0.
+- All three delivery-action borders computed as 0px, backgrounds transparent, shadows none.
+- Language control background computed as transparent; footer uses the requested darker gradient.
+- Representative note background computed as white; values section loads the new lotus/diya native SVG artwork.
+- Location map measured 504px tall at 1200px desktop width and 450px at 390px mobile width. External map-link count 0.
+- Mobile home, about and location inspected without horizontal overflow. Desktop pages inspected without horizontal overflow.
+- Preview server now serves SVG with image/svg+xml, verified by rendered values artwork.
+- Preview viewport reset and the updated home page left open.
+
+Company branding update: rendered shared header text verified as G.and P. 合同会社 in JP and EN, with no shop-name text or image in the header. The store-details logo loaded at its natural 1774px width. Desktop and 390px mobile inspected without horizontal overflow.
+

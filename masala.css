@@ -1,0 +1,162 @@
+
+/* Brand adaptation. Original layout, decorative art, transitions, and motion remain in styles.css. */
+:root{--cream:#f8f0df;--paper:#fffaf0;--ink:#315a29;--ink-deep:#18371d;--orange:#f08a19;--gold:#e6a126;--text:#3b3426;--muted:#786f5e;--line:#ded0b7}
+.company-brand{flex-direction:row;align-items:center;gap:10px;max-width:none}
+.masala-header-logo{width:48px;height:48px;object-fit:contain;flex:none}
+.company-brand .company-title{font:600 23px/1.1 var(--company-font);letter-spacing:.025em}
+.company-brand .company-name-suffix{font:500 10px/1.5 var(--sans);letter-spacing:.08em;margin-top:3px}
+.footer-brand>a:first-child .company-title{font-size:36px;color:#fff2db}
+.footer-brand>a:first-child .company-name-suffix{font:500 13px/1.6 var(--sans)}
+.company-name-inline,[data-i18n="companyName"]{font-family:var(--sans);font-style:normal}
+.hero-title-accent{color:#ffc263}
+.button-dark,.button-reservation{background:var(--ink)}
+.button-dark:hover{background:#416d32}
+.text-link,.map-link,.representative-profile p{color:#a51c26}
+.home-store-card-header{border-bottom-color:#e6a126}
+.home-store-card-header>.store-wordmark{width:72px;height:72px;max-height:none;aspect-ratio:1;object-fit:contain}
+.store-identity>.store-wordmark{width:100px;height:100px;max-height:none;aspect-ratio:1;object-fit:contain}
+.about-photo-signature{width:86px;padding:8px}
+.about-photo-signature img{aspect-ratio:1;object-fit:contain}
+.representative-profile img{aspect-ratio:4/3;object-fit:cover}
+.representative-note{background:linear-gradient(135deg,#a51c26,#62141a)}
+.language-switch{color:#315a29}
+.language-switch .language-option{color:#315a29}
+.language-switch .language-option.is-active,.language-switch.is-en .language-en,.language-switch:not(.is-en) .language-ja{background:#315a29;color:#fff0ce}
+.sns-line:disabled{cursor:default;opacity:1;background:#315a29;color:white;font:700 16px var(--sans);border:1px solid #ffffff70}
+.sns-line:disabled:hover{transform:none}
+@media(max-width:760px){.company-brand{max-width:65%;gap:7px}.masala-header-logo{width:34px;height:34px}.company-brand .company-title{font-size:18px}.company-brand .company-name-suffix{font-size:9px}.home-store-card-header>.store-wordmark{width:60px;height:60px}.representative-profile{max-width:440px;width:100%}.representative-profile img{aspect-ratio:4/3}.about-photo-signature{width:68px}html:lang(ja) .hero h1>span{font-size:clamp(24px,7vw,44px);text-indent:0}.header-actions{flex-shrink:0}}
+@media(max-width:380px){.company-brand .company-title{font-size:15px}.masala-header-logo{width:27px;height:27px}.company-brand{gap:5px}.company-brand .company-name-suffix{font-size:8px}}
+
+/* Requested review refinements, November 2026. */
+/* Equal side columns keep the navigation at the center of the viewport. */
+@media(min-width:1101px){
+ .header-inner{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:20px}
+ .header-inner .company-brand{grid-column:1;justify-self:start;position:static;transform:none}
+ .header-inner .desktop-nav{grid-column:2;position:static;left:auto;transform:none;margin:0;justify-self:center;display:flex}
+ .header-inner .header-actions{grid-column:3;position:static;justify-self:end}
+}
+/* A single language action replaces the segmented JP/EN control. */
+.site-header .language-switch{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-width:94px;height:40px;padding:9px 14px;border:1px solid #d8c8aa;border-radius:100px;background:#fffaf0;color:#315a29;box-shadow:none;transition:background .2s,transform .2s,box-shadow .2s}
+.site-header .language-switch:hover{background:#fff1d2;box-shadow:0 4px 16px #e6a12630;transform:translateY(-1px)}
+.site-header .language-switch .language-globe{display:block;flex:none;width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.4}
+.site-header .language-switch .language-target{margin:0;font:700 12px/1 var(--sans);white-space:nowrap}
+.site-header .language-switch .language-arrow{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.5}
+@media(max-width:1100px){
+ .header-inner{display:flex;justify-content:space-between}
+ .header-inner .company-brand{position:static;transform:none}
+ .header-inner .desktop-nav{display:none}
+ .header-inner .header-actions{position:static;gap:10px}
+ .menu-toggle{display:block}
+ .mobile-nav:not([hidden]){display:flex;flex-direction:column;gap:0;padding:10px 6vw 24px;background:#fff;color:var(--ink);box-shadow:0 12px 18px #071f1d22}
+ .mobile-nav a{padding:12px 0;border-bottom:1px solid var(--line);text-align:center}
+}
+/* Lighter green with warm orange light across the footer. */
+.site-footer{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 100% 0%,#e7b34b14,transparent 58%),linear-gradient(115deg,#426f35 0%,#537737 48%,#477842 100%);border-top:2px solid #e8b454;color:#fffdf3}
+.site-footer::before{content:"";position:absolute;z-index:-1;width:480px;height:480px;border:1px solid #ffedba26;border-radius:50%;right:-180px;top:-220px;box-shadow:0 0 0 36px #ffedba09,0 0 0 73px #ffedba0b;pointer-events:none}
+.site-footer .footer-grid h2,.site-footer .footer-bottom a{color:#ffdf9e}
+.site-footer .footer-brand p,.site-footer .footer-bottom{color:#fff6df}
+.site-footer .footer-bottom{border-top-color:#fff6df40}
+/* Compact introduction with the supplied namaste team portrait. */
+#about.section-pad{padding-block:clamp(38px,4.2vw,64px)}
+#about .about-grid{gap:clamp(28px,4vw,60px)}
+#about .about-visual>img{height:auto;aspect-ratio:4/3;max-height:390px;object-fit:cover}
+#about .body-copy{margin-bottom:17px}
+.store-grid .store-details{background:#fff9ee}
+.home-reservation .button-reservation{background:#f58216;color:#fff;border:1px solid #f58216;text-shadow:0 1px 2px #903b0860}
+.home-reservation .button-reservation:hover{background:#e9730a;border-color:#e9730a;color:#fff}
+.sns-band .sns-line:disabled{background:#06c755;color:white;border-color:#06c755}
+/* Type-led representative identity and an open letter composition. */
+.representative-grid{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(36px,6vw,88px);align-items:center}
+.representative-profile{width:100%;max-width:none;margin:0;text-align:left;padding:20px 0 20px 24px;border-left:3px solid #e6a126}
+.representative-profile .representative-company{margin:0 0 34px;font:500 15px/1.6 var(--sans);color:#657147}
+.representative-profile .representative-role{margin:0 0 12px;font:700 12px/1.5 var(--sans);letter-spacing:.12em;color:#a51c26}
+.representative-profile h2{font:500 clamp(25px,2.6vw,38px)/1.55 var(--serif);color:#315a29;overflow-wrap:anywhere}
+html:lang(en) .representative-profile h2{font-family:var(--company-font);font-size:clamp(32px,3.4vw,48px)}
+.representative-note{aspect-ratio:auto;min-height:0;overflow:visible;max-width:none;padding:clamp(28px,3.6vw,50px);background:#fff9ec;border:1px solid #e5d6b6;border-radius:2px 36px 2px 2px;box-shadow:9px 9px 0 #f1e5cb;text-align:left}
+.representative-note::before{content:"";top:26px;right:25px;width:44px;height:3px;background:linear-gradient(90deg,#315a29 0 34%,#e6a126 34% 68%,#a51c26 68%);opacity:1}
+.representative-note .ceo-catch{margin:14px 0 24px;color:#315a29;font:500 clamp(27px,3.1vw,44px)/1.5 var(--serif);letter-spacing:.02em}
+html:lang(en) .representative-note .ceo-catch{font:500 italic clamp(34px,4vw,54px)/1.15 var(--company-font)}
+.representative-note .ceo-message{padding-top:23px;color:#4f493b;border-top:1px solid #ddcead;line-height:2.05}
+/* Light sweeps across the whole card on hover or keyboard focus. */
+.booking-card,.delivery-card{position:relative;isolation:isolate;overflow:hidden;transition:transform .28s,box-shadow .28s,border-color .28s}
+.booking-card::after,.delivery-card::after{content:"";position:absolute;inset:-50% -100%;z-index:3;background:linear-gradient(110deg,transparent 40%,#fff7 49%,#fff9 50%,transparent 60%);transform:translateX(-55%);opacity:0;pointer-events:none}
+.booking-logo,.delivery-logo,.booking-action,.delivery-action{transition:transform .28s,filter .28s,box-shadow .28s}
+.booking-card .booking-action,.delivery-card .delivery-action{position:relative;border-radius:7px;isolation:isolate}
+.delivery-card .delivery-action{padding:9px 13px;border:1px solid currentColor;background:#ffffff18}
+.booking-card:focus-visible,.delivery-card:focus-visible{transform:translateY(-5px);box-shadow:0 14px 34px #0004}
+.booking-card:focus-visible::after,.delivery-card:focus-visible::after{animation:masalaShine .85s ease-out both}
+.booking-card:focus-visible .booking-logo,.delivery-card:focus-visible .delivery-logo{transform:translateY(-3px) scale(1.06)}
+@media(hover:hover){
+ .booking-card:hover,.delivery-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px #0005}
+ .booking-card:hover::after,.delivery-card:hover::after{animation:masalaShine .85s ease-out both}
+ .booking-card:hover .booking-logo,.delivery-card:hover .delivery-logo{transform:translateY(-3px) scale(1.06);filter:drop-shadow(0 5px 6px #0002)}
+ .booking-card:hover .booking-action,.delivery-card:hover .delivery-action{transform:translateY(-2px);box-shadow:0 4px 12px #0002}
+}
+@keyframes masalaShine{0%{transform:translateX(-55%);opacity:0}15%{opacity:1}85%{opacity:1}100%{transform:translateX(55%);opacity:0}}
+@media(max-width:760px){
+ #about.section-pad{padding-block:34px}
+ #about .about-grid{gap:26px}
+ #about .about-visual{margin:0}
+ #about .about-visual>img{max-height:330px}
+ .representative-grid{grid-template-columns:1fr;gap:27px}
+ .representative-profile{max-width:none;text-align:center;padding:10px 0 22px;border-left:0;border-bottom:1px solid #e6d5b5}
+ .representative-profile .representative-company{margin-bottom:20px}
+ .representative-profile h2{font-size:clamp(22px,6.3vw,30px)}
+ .representative-note{padding:30px 24px;max-width:none;border-radius:2px 25px 2px 2px;box-shadow:5px 5px 0 #f1e5cb;text-align:left}
+ .representative-note .ceo-catch{font-size:clamp(26px,7vw,36px)}
+ .site-header .language-switch{min-width:78px;height:36px;gap:6px;padding:7px 10px}
+ .site-header .language-switch .language-arrow{display:none}
+ .site-header .language-switch .language-target{font-size:11px}
+}
+@media(max-width:380px){.site-header .language-switch{min-width:65px;padding:7px 8px;gap:5px}.site-header .language-switch .language-globe{width:14px;height:14px}.header-inner .header-actions{gap:4px}}
+@media(prefers-reduced-motion:reduce){.booking-card::after,.delivery-card::after{animation:none!important}.booking-card,.delivery-card,.booking-logo,.delivery-logo,.booking-action,.delivery-action{transition:none!important}.booking-card:hover,.delivery-card:hover,.booking-card:focus-visible,.delivery-card:focus-visible,.booking-card:hover .booking-logo,.delivery-card:hover .delivery-logo{transform:none}}
+/* Original image-generated artwork created specifically for this restaurant. */
+#store.home-store{background:#faf4e8 url("assets/masala-chili-paisley.png") center/100% 100% no-repeat}
+.stores-gallery{background:#faf5eb url("assets/masala-jaali-gallery.png") center/100% 100% no-repeat}
+@media(max-width:760px){
+ #store.home-store{background-image:url("assets/masala-chili-paisley.png"),url("assets/masala-chili-paisley.png");background-size:100% auto;background-position:center top,center bottom;background-repeat:no-repeat}
+ .stores-gallery{background-size:100% 100%;padding-block:42px 48px}
+ .stores-gallery .gallery-heading h2{max-width:70%;margin-inline:auto;font-size:clamp(22px,5.8vw,30px)}
+}
+
+
+/* Final client polish: hero replacement, seamless controls, white stationery, and expanded map. */
+body[data-page="home"] .hero-image{background-image:url("assets/masala-hero-new.png");background-position:center;}
+.hero-buttons .button{justify-content:center;text-align:center;gap:0;min-width:190px}
+.delivery-card:is(.uber,.demae,.rocket) .delivery-action{border:0;background:transparent;box-shadow:none;border-radius:0;color:inherit;padding:9px 0}
+.delivery-card:is(.uber,.demae,.rocket):hover .delivery-action{box-shadow:none}
+.site-header .language-switch{background:transparent;border-color:currentColor;color:inherit;box-shadow:none}
+.site-header .language-switch:hover{background:#315a2910;border-color:currentColor;box-shadow:none}
+body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-switch:hover{background:#ffffff18}
+.site-footer{background:radial-gradient(ellipse at 100% 0%,#d5b45812,transparent 60%),linear-gradient(115deg,#2e562b 0%,#3d622e 48%,#315c36 100%)}
+.representative-note{background:#fff;border:1px solid #e4e7e1;border-radius:2px;box-shadow:0 10px 30px #2443230d,6px 6px 0 #f1f2ef}
+.representative-note::before{width:38px;height:38px;top:0;right:0;background:linear-gradient(225deg,#f0f1ed 0 49%,#fff 50%);box-shadow:-1px 1px 1px #24432312;opacity:1}
+.representative-note .ceo-message{border-top-color:#e1e5dd}
+.values-section{background:#faf8f1 url("assets/masala-values-lotus.svg") center/100% 100% no-repeat}
+.values-section .value-card{background:#ffffffeb;border-color:#e2dbc9;box-shadow:0 7px 18px #315a2908}
+.location-section.section-pad{padding-block:26px 34px}
+.location-section .location-intro{margin-bottom:18px}
+.location-section .location-intro .section-title{margin-bottom:9px}
+.location-section .location-intro p{margin-bottom:0}
+.location-section .map-card .map-frame{height:clamp(440px,42vw,620px)}
+@media(max-width:760px){
+ .hero-buttons .button{min-width:0;flex:1;justify-content:center}
+ .values-section{background-image:url("assets/masala-values-lotus-mobile.svg");background-size:100% 100%;padding-block:42px}
+ .values-section .section-title{background:none;max-width:85%;margin-inline:auto}
+ .representative-note{border-radius:2px;box-shadow:4px 4px 0 #f1f2ef}
+ .location-section.section-pad{padding-block:24px 28px}
+ .location-section .map-card .map-frame{height:450px}
+ .location-section .location-intro p{font-size:14px}
+}
+
+/* Company-only header branding and supplied full restaurant logo. */
+.site-header .company-brand .company-title{font:600 22px/1.3 var(--sans);letter-spacing:.015em}
+.store-identity>.store-wordmark.store-full-logo{width:min(100%,280px);height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;margin-bottom:18px}
+@media(max-width:760px){.site-header .company-brand .company-title{font-size:18px}.store-identity>.store-wordmark.store-full-logo{width:min(100%,240px)}}
+@media(max-width:380px){.site-header .company-brand .company-title{font-size:16px}}
+.home-store-card-header>.store-wordmark.home-full-logo{width:156px;height:auto;max-height:none;aspect-ratio:auto;object-fit:contain}
+@media(max-width:760px){.home-store-card-header>.store-wordmark.home-full-logo{width:124px}}
+@media(max-width:420px){.home-store-card-header{gap:13px;padding-inline:18px}.home-store-card-header>.store-wordmark.home-full-logo{width:100px}}
+
+/* Precomputed BudouX phrase boundaries; the parser and model are vendored for offline regeneration. */
+html:lang(ja) .budoux-phrase{display:inline-block;white-space:nowrap;word-break:keep-all}

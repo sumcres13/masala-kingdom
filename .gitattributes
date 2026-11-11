@@ -1,0 +1,5 @@
+# Preserve exact bytes across Windows, macOS, Linux, and Manus checkouts.
+* -text
+*.png binary
+*.jpg binary
+*.woff2 binary

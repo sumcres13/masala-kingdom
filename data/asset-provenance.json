@@ -1,0 +1,47 @@
+[
+  {
+    "suppliedFilename": "logo.png",
+    "path": "assets/logo.png",
+    "sha256": "222915254a34e13eb02fc1a6cf5884a6261f408c4fa5ff3ff8f5b68d4dcda90d"
+  },
+  {
+    "suppliedFilename": "hero image.png",
+    "path": "assets/hero image.png",
+    "sha256": "b16b8fd2c7011d56a7694324483eb3bb53ad0bb8989b527054dd277b8a19e1ac"
+  },
+  {
+    "suppliedFilename": "shop info.png",
+    "path": "assets/shop info.png",
+    "sha256": "8f94f41d4cc9849003eace253f092eb250de7df15d4d943d094342c76c2ffdcf"
+  },
+  {
+    "suppliedFilename": "first slideshow picture.png",
+    "path": "assets/first slideshow picture.png",
+    "sha256": "b300ad09ddce143da29b84f0c6da0701909546162028b9da18bace0309252f0d"
+  },
+  {
+    "suppliedFilename": "slideshow 1.png",
+    "path": "assets/slideshow 1.png",
+    "sha256": "1965cd09a9d532e54db1d13883ac76e6c95fd0aaf2b6d1b3a5e0e7ff3acba08f"
+  },
+  {
+    "suppliedFilename": "slideshow 2.png",
+    "path": "assets/slideshow 2.png",
+    "sha256": "ea0c0a553f83f0df9f3bc6f084f520fdc6ca77b46c3f519c48bb2a6d938da631"
+  },
+  {
+    "suppliedFilename": "slideshow 3.png",
+    "path": "assets/slideshow 3.png",
+    "sha256": "d248847d746dc8ca8128e76f278349f5d15cb36359d00f674fd2d103d690560b"
+  },
+  {
+    "suppliedFilename": "ChatGPT Image Nov 11, 2026, 07_41_54 PM.png",
+    "path": "assets/masala-hero-new.png",
+    "sha256": "9a030ca6e47de23cbccd60d9a40235faa7af376e0da4bbc0e6a5adc4d746c2e1"
+  },
+  {
+    "suppliedFilename": "ChatGPT Image Nov 11, 2026, 07_48_38 PM.png",
+    "path": "assets/masala-kingdom-full-logo.png",
+    "sha256": "b44e3268c28600fc47e24512a5807e123cea5aee154a3064adcc9a0a88625081"
+  }
+]
