@@ -145,7 +145,7 @@ body[data-page="home"] .site-header:not(.is-scrolled):not(.menu-open) .language-
  .values-section .section-title{background:none;max-width:85%;margin-inline:auto}
  .representative-note{border-radius:2px;box-shadow:4px 4px 0 #f1f2ef}
  .location-section.section-pad{padding-block:24px 28px}
- .location-section .map-card .map-frame{height:450px}
+ .location-section .map-card .map-frame{height:auto;aspect-ratio:1 / 1}
  .location-section .location-intro p{font-size:14px}
 }
 
