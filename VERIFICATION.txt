@@ -25,3 +25,6 @@ Final polish verification, 2026-11-11:
 
 Company branding update: rendered shared header text verified as G.and P. 合同会社 in JP and EN, with no shop-name text or image in the header. The store-details logo loaded at its natural 1774px width. Desktop and 390px mobile inspected without horizontal overflow.
 
+
+Manus/public-repository preparation: original bytes confirmed for all 9 supplied images; local font stylesheet loaded successfully; 32 scoped Japanese phrase spans rendered without mobile overflow; JP/EN switching checked; 4 parser/copy-preservation tests passed. The build verifies all deployment hashes and rejects unexpected output files (synthetic contamination test passed). Owner-private inputs were not found in the checked source payload. Independent portability review completed; identified output-staleness issue fixed.
+

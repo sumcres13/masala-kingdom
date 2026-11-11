@@ -30,3 +30,6 @@ Latest screenshots: preview/hero-final.jpg, preview/values-final.jpg, preview/ma
 
 Company-only shared header: G.and P. 合同会社. Store-details logo replaced with the supplied assets/masala-kingdom-full-logo.png. Footer and other logo placements retain their existing branding.
 
+
+GitHub/Manus handoff: README.md is the current guide. Header chili mark restored; full restaurant logo now used in both home store card and store-details panel. Local font files, BudouX 0.10.3 parser/model/source, generated phrase data, integrity manifest and reproducible build are included.
+

@@ -10,12 +10,23 @@ fs.mkdirSync(destination, { recursive: true });
 const entries = ['index.html', 'about.html', 'stores.html', 'reservation.html', 'script.js', 'styles.css', 'masala.css', 'assets'];
 for (const entry of entries) fs.cpSync(path.join(root, entry), path.join(destination, entry), { recursive: true });
 let count = 0;
+const expectedFiles = [];
 function verify(relative) {
   const source = path.join(root, relative);
   if (fs.statSync(source).isDirectory()) return fs.readdirSync(source).forEach(child => verify(path.join(relative, child)));
   const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
   assert.equal(hash(source), hash(path.join(destination, relative)), `Build changed bytes: ${relative}`);
+  expectedFiles.push(relative.split(path.sep).join('/'));
   count++;
 }
 entries.forEach(verify);
+function outputFiles(directory, prefix = '') {
+  return fs.readdirSync(directory, { withFileTypes: true }).flatMap(entry => {
+    const relative = prefix + entry.name;
+    if (entry.isDirectory()) return outputFiles(path.join(directory, entry.name), relative + '/');
+    assert(entry.isFile(), `Unsupported output entry: ${relative}`);
+    return [relative];
+  });
+}
+assert.deepEqual(outputFiles(destination).sort(), expectedFiles.sort(), 'dist/ contains unexpected files; inspect and remove stale output before deploying');
 console.log(`PASS: dist/ contains ${count} deployment files, copied without transforming or recompressing a byte.`);
